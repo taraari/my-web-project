@@ -1,0 +1,246 @@
+ <style>
+
+  #top-container
+  {
+  width:%100;
+  height:auto;
+  } 
+  
+  #logo
+  {
+  height:75px;
+  float:left;
+  text-align:center;
+  } 
+  
+    #menu 
+    {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menusub 
+  {
+    padding: 0 15px;
+  }
+  
+  .menusub a 
+  {
+    color: pink;
+    font-weight: bold;
+   }
+  
+  #content-container
+  {
+  width:100%;
+  height:auto;
+  background-color:white;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  
+  } 
+  
+  .content
+  {
+  width:24.80%;
+  height:auto;
+  padding:5px;
+   border:1px solid pink;
+   
+  } 
+  
+  .content h2 {
+    border-bottom: 7px solid pink;
+    padding-bottom: 10px;
+    }
+    
+  #section
+  {
+  width:100%;
+  height:100px;
+  background-color:pink;
+  } 
+  
+  #footer
+  {
+  width:100%;
+  height:130px;
+  background-color:pink;
+  } 
+  
+  {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.slider-container {
+    position: relative;
+    width:100%;
+    height:500px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+	#intro-text {
+	font-size: 40px; 
+    color: #f2859c;
+  	font-family: 'Helvetica', sans-serif; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 20px; 
+}
+
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.controls button {
+    pointer-events: all;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.controls button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+   background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 12pt;
+    font-family: "Spartan";
+    color: #2A293E;
+  }
+  
+  .contact-us {
+    background: #f8e5e9;
+    padding: 50px 100px;
+    border-top: 10px solid #f2859c;
+  }
+  
+  label, input, textarea {
+    display: block;
+    width: 100%;
+    font-size: 12pt;
+    line-height: 24pt;
+    font-family: "Spartan";
+  }
+  
+  input {
+    margin-bottom: 24pt;
+  }
+  
+  
+  span {
+    font-size: 8pt;
+  }
+  
+  em {
+    color: #f2859c;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background: #f2859c;
+    padding-left: 5px;
+    outline: none;
+  }
+  
+  input:focus, textarea:focus {
+    border: 1px solid #f2859c;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    display: block;
+    float: right;
+    line-height: 24pt;
+    padding: 0 20px;
+    border: none;
+    background: #eb5474;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    border-bottom: 2px solid transparent;
+    outline: none;
+  }
+  button:hover {
+    background: inherit;
+    color: #f45702;
+    border-bottom: 2px solid #f2859c;
+  }
+  
+  ::selection {
+    background: #ffc7b8;
+  }
+  
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus {
+    border: 1px solid #6bd4b1;
+    -webkit-text-fill-color: #2A293E;
+    -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  
+</style>
